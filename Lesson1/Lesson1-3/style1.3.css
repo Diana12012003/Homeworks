@@ -10,10 +10,11 @@ h1 {
 p{
     background-color: rgba(247, 240, 237, 0.9);
     width: 60%;
-    height: 170px;
-    display: block;
+    height: 190px;
+    display: flex;
     margin-left: 200px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
+    text-align: left;
 }
 img{
     object-fit: cover;

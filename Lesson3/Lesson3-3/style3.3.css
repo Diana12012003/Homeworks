@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+    font-family: "Droid Serif", serif;
+}
+#section-1 {
+    background-color: coral;
+}
+#section-2 {
+    background-color: cadetblue;
+}
+#section-3 {
+    background-color: #3b6352;
+}
+section p{
+    width: 80%;
+}
+button{
+    border: none;
+    margin-top: 20px;
+    transition: 4s;
+    font-size: 4rem;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.2);
+}

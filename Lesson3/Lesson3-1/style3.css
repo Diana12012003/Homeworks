@@ -1,0 +1,30 @@
+body{
+    margin: 2%;
+}
+header{
+    height: 70vh;
+    background-color: dodgerblue;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0;
+}
+section{
+    height: 70vh;
+    width: 30%;
+    background-color: rgba(8, 68, 128, 0.8);
+}
+footer{
+    height: 80vh;
+    background-color: dodgerblue;
+}
+header, section, footer{
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Dialog, sans-serif;
+}
