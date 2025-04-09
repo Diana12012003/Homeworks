@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      background: gray;
+    }
+    .clouds{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    img{
+      width: 350px;
+      height: 350px;
+    }
+    .drops{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      animation: raining 6s ease-in infinite alternate;
+    }
+    @keyframes raining{
+      from{
+        transform: translateY(-150px);
+        opacity: 1;
+      }
+      to{
+        transform: translateY(400px);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="rain">
+<div class="clouds">
+<div><img src="https://static.vecteezy.com/system/resources/thumbnails/059/060/636/small_2x/white-fluffy-cloud-in-isolated-watercolor-illustration-png.png" alt="cloud"></div>
+<div><img src="https://static.vecteezy.com/system/resources/thumbnails/059/060/636/small_2x/white-fluffy-cloud-in-isolated-watercolor-illustration-png.png" alt="cloud"></div>
+<div><img src="https://static.vecteezy.com/system/resources/thumbnails/059/060/636/small_2x/white-fluffy-cloud-in-isolated-watercolor-illustration-png.png" alt="cloud"></div>
+</div>
+<div class="drops">
+  <img src="https://png.pngtree.com/png-vector/20221019/ourmid/pngtree-rain-drop-illustration-png-image_6353249.png" alt="drops">
+  <img src="https://png.pngtree.com/png-vector/20221019/ourmid/pngtree-rain-drop-illustration-png-image_6353249.png" alt="drops">
+  <img src="https://png.pngtree.com/png-vector/20221019/ourmid/pngtree-rain-drop-illustration-png-image_6353249.png" alt="drops">
+</div>
+</div>
+</body>
+</html>

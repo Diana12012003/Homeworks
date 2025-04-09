@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            padding: 0 20px;
+        }
+
+        img{
+            width: 350px;
+            height: 350px;
+            top: 50%;
+        }
+        .girl {
+            animation: mover 4s linear forwards infinite;
+        }
+
+        .boy {
+            animation: movel 4s linear forwards infinite;
+        }
+
+        @keyframes mover{
+            to {
+                transform: translateX(500px);
+            }
+        }
+
+        @keyframes movel{
+            to {
+                transform: translateX(-500px);
+            }
+        }
+        .house{
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="girl"><img
+            src="https://file.aiquickdraw.com/imgcompressed/img/compressed_7783ff9852b0637892ee351cb16e3356.webp"
+            alt="girl"></div>
+    <div class="boy"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFUCkrh4N8QFslKf5Rox8NRSac2njw5ZsuWg&s"
+            alt="boy"></div>
+    <div class="house"><img
+            src="https://img.pikbest.com/png-images/20240821/isolated-cartoon-homes--7c-suburban-houses-for-property-concepts_10747756.png!sw800"
+            alt="house"></div>
+</div>
+</body>
+</html>
