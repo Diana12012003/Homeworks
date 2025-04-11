@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        body{
+            background-color: #FFFFFF;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+        .registration h1{
+            font-family: 'Lobster Two', cursive;
+            font-size: 45px;
+            margin-bottom: 30px;
+        }
+        .registration{
+            width: 350px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid rgba(0, 0, 0, 0.27);
+            padding: 40px 40px 20px;
+            text-align: center;
+        }
+        .registration input[type="text"],
+        .registration input[type="password"]{
+            width: 100%;
+            padding: 9px;
+            margin: 6px auto;
+            background-color: #fafafa;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        .registration input[type="submit"]{
+            background-color: #3897f0;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 10px;
+            width: 100%;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .registration>form>h2{
+            margin: 20px 0;
+            position: relative;
+            font-size: 20px;
+            color: #8e8e8e;
+            font-weight: bold;
+            background-color: white;
+            padding: 0 10px;
+        }
+        .facebook{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(32, 64, 120, 0.85);
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 10px;
+            gap: 10px;
+        }
+        .facebook img{
+            width: 30px;
+            height: 30px;
+        }
+        .registration a{
+            text-decoration: none;
+            font-size: 16px;
+            color: rgba(32, 64, 120, 0.85);
+            font-weight: bold;
+        }
+        .form2{
+            width: 408px;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.27);
+            background-color: white;
+            text-align: center;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .form2 h3{
+            font-weight: normal;
+        }
+        .form2 a{
+            text-decoration: none;
+            font-size: 16px;
+            color: #3897f0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="registration">
+    <div>
+        <h1>Instagram</h1>
+    </div>
+    <form>
+        <label>
+        <input type="text" placeholder="Номер телефону, імя користувача або email" required>
+        <input type="password" placeholder="Пароль" required>
+        <input type="submit" value="Увійти">
+        </label>
+            <h2>АБО</h2>
+        <div class="facebook">
+            <img width="48" height="48" src="https://img.icons8.com/color/48/facebook.png" alt="facebook"/>
+                Увійти через Facebook
+        </div>
+        <a href="/reset-password">Забули пароль?</a>
+        </form>
+</div>
+<div class="form2">
+    <h3>Не маєте облікового запису?</h3>
+    <a href="#">Зареєструйтеся</a>
+</div>
+</body>
+</html>
