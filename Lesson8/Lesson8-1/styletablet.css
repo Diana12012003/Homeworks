@@ -1,0 +1,21 @@
+@media screen and (min-width: 481px) and (max-width: 1279px) {
+    .wrapper {
+        width: 721px;
+    }
+
+    .photos {
+        width: 218px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .photos h3 {
+        width: 218px;
+        height: 48px;
+    }
+
+    .photos p {
+        margin-top: 15px;
+    }
+}
