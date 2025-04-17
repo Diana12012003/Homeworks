@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    *{
+      margin: 0;
+    }
+    .grid{
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: 1fr 1fr 0.5fr 0.5fr 1fr 1fr;
+      grid-template-areas:
+      "header header"
+      "container1 top"
+      "container2 top"
+      "container2 bottom"
+      "container3 bottom"
+      "footer footer"
+    ;
+    }
+    header{
+      grid-area: header;
+      background-color: rgba(141, 132, 132, 1);
+    }
+    footer{
+      grid-area: footer;
+      background-color: rgba(189, 189, 189, 1);
+    }
+    .container1{
+      grid-area: container1;
+      background-color: rgba(119, 105, 105, 1);
+    }
+    .container2{
+      grid-area: container2;
+      background-color: rgba(100, 48, 48, 1);
+    }
+    .container3{
+      grid-area: container3;
+      background-color: rgba(68, 24, 24, 1);
+    }
+    .top{
+      grid-area: top;
+      background-color: rgba(147, 117, 117, 1);
+    }
+    .bottom{
+      grid-area: bottom;
+      background-color: rgba(100, 76, 76, 1);
+    }
+    header, footer, .container1, .container2, .container3, .top, .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    header, footer{
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      font-size: 45px;
+      line-height: 100%;
+    }
+    .container1, .container2, .container3, .top, .bottom{
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      font-size: 45px;
+      line-height: 100%;
+      color: rgba(255, 255, 255, 1);
+    ;
+
+    }
+  </style>
+</head>
+<body>
+<div class="grid">
+  <header>
+    <p>Header</p>
+  </header>
+  <section class="container1">
+    <p>Content - 1</p>
+  </section>
+  <section class="container2">
+    <p>Content - 2</p>
+  </section>
+  <section class="container3">
+    <p>Content - 3</p>
+  </section>
+  <aside class="top">
+    <p>spam -1</p>
+  </aside>
+  <aside class="bottom">
+    <p>spam -2</p>
+  </aside>
+  <footer>
+    <p>footer</p>
+  </footer>
+</div>
+</body>
+</html>

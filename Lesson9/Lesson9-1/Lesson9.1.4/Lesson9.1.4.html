@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .grid{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 2.5fr 1.5fr;
+            grid-template-rows: 0.2fr 1.5fr 1.5fr 0.4fr 0.5fr;
+            grid-template-areas:
+            "header header"
+            "container-1 top"
+            "container-1 bottom"
+            "container-2 container-2"
+            "footer footer";
+
+        }
+        header{
+            grid-area: header;
+            background-color: rgba(217, 217, 217, 1);
+        }
+        footer{
+            grid-area: footer;
+            background-color: rgba(175, 169, 169, 1);
+        }
+        .container-1{
+            grid-area: container-1;
+            background-color: rgba(164, 164, 164, 1);
+        }
+        .container-2{
+            grid-area: container-2;
+            background-color: rgba(217, 217, 217, 1);
+        }
+        .top{
+            grid-area: top;
+            background-color: rgba(127, 122, 122, 1);
+        }
+        .bottom{
+            grid-area: bottom;
+            background-color: rgba(97, 80, 80, 1);
+        }
+    </style>
+</head>
+<body>
+<div class="grid">
+<header></header>
+<section class="container-1"></section>
+<aside class="top"></aside>
+<aside class="bottom"></aside>
+<section class="container-2"></section>
+<footer></footer>
+</div>
+</body>
+</html>
